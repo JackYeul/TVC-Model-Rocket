@@ -1,0 +1,31 @@
+# MATLAB / Simulink
+# Autosave and backup files
+*.asv
+*.m~
+*.autosave
+*.slx.original
+
+# Simulink cache and generated build artifacts
+slprj/
+sccprj/
+*.slxc
+*.mexa64
+*.mexw64
+*.mexmaci64
+
+# Simulink Project / MATLAB Project temp
+resources/project/
+.SimulinkProject/
+
+# Code generation output
+codegen/
+*_ert_rtw/
+*_grt_rtw/
+
+# Logs and temp
+*.log
+*.mat.bak
+
+# OS junk
+.DS_Store
+Thumbs.db
