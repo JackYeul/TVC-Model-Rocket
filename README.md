@@ -1,2 +1,2 @@
 # TVC-Model-Rocket
-Repository for the simulation and programming of a thrust vector controlled model rocket
+Repository for the simulation, design, and programming of a thrust vector controlled model rocket
