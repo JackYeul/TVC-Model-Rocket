@@ -1,0 +1,12 @@
+active: true
+derived: false
+header: ''
+level: 1.0
+links: []
+normative: true
+ref: ''
+reviewed: 4LbJGbHEbp2HerzHqpgRcRAm7XvTt-hoAc1ZWahdx7k=
+source: Stakeholder need - project sponsor flight demonstration objective
+text: |
+  The stakeholder needs a flight-demonstrable model rocket that uses active thrust vector control (TVC) to maintain a stable, near-vertical ascent under its own closed-loop attitude control, so that the TVC design approach can be validated on a low-cost airframe before being applied to larger vehicles.
+verification_status: not_started

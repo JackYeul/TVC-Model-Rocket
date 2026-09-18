@@ -1,0 +1,13 @@
+active: true
+derived: false
+header: ''
+level: 1.0
+links:
+- SYS001: rLvDi7Z5mZ1ZVLlyVsKYMMxBjyWrMRx9Wil_PzXBBag=
+normative: true
+ref: ''
+reviewed: KRte9XARCK7l5rdYnxSgXpuICiM5SUR5A3HaVgEiL38=
+source: SYS001
+text: |
+  The thrust vector control subsystem shall compute and issue nozzle gimbal deflection commands at a rate of at least 50 Hz, with an end-to-end latency from inertial measurement to commanded deflection of no more than 20 ms.
+verification_status: not_started

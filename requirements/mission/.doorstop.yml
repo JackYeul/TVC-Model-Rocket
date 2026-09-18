@@ -1,0 +1,12 @@
+attributes:
+  defaults:
+    source: ""
+    verification_status: "not_started"
+  publish:
+    - source
+    - verification_status
+settings:
+  digits: 3
+  itemformat: yaml
+  prefix: MIS
+  sep: ''
