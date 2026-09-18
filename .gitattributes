@@ -1,0 +1,29 @@
+# Normalize KiCad text files to LF in the repository so line endings stay
+# stable across machines. Without this, a save on one machine can rewrite
+# every line of a file and produce phantom whole-file diffs and conflicts.
+*.kicad_pcb      text eol=lf
+*.kicad_sch      text eol=lf
+*.kicad_sch-bak  text eol=lf
+*.kicad_pro      text eol=lf
+*.kicad_prl      text eol=lf
+*.kicad_sym      text eol=lf
+*.kicad_mod      text eol=lf
+*.net            text eol=lf
+fp-info-cache    text eol=lf
+*.csv            text eol=lf
+
+# MATLAB / Simulink sources
+*.m              text eol=lf
+*.slx            binary
+
+# Doorstop requirements
+*.yml            text eol=lf
+
+# CAD and archive binaries - never convert
+*.step           binary
+*.stp            binary
+*.f3z            binary
+*.f3d            binary
+*.zip            binary
+*.pdf            binary
+*.png            binary
