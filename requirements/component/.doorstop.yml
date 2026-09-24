@@ -2,9 +2,13 @@ attributes:
   defaults:
     source: ""
     verification_status: "not_started"
+    rationale: ""
+    derivation: ""
   publish:
     - source
     - verification_status
+    - rationale
+    - derivation
 settings:
   digits: 3
   itemformat: yaml

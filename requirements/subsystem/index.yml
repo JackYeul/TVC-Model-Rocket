@@ -1,0 +1,12 @@
+###############################################################################
+# THIS TEMPORARY FILE WILL BE DELETED AFTER DOCUMENT REORDERING
+# MANUALLY INDENT, DEDENT, & MOVE ITEMS TO THEIR DESIRED LEVEL
+# A NEW ITEM WILL BE ADDED FOR ANY UNKNOWN IDS, i.e. - new: 
+# THE COMMENT WILL BE USED AS THE ITEM TEXT FOR NEW ITEMS
+# USE '# heading #' or '# HEADING #' TO MARK A NEW ITEM AS HEADING; FOLLOWING TEXT BECOMES ITS HEADER
+# CHANGES WILL BE REFLECTED IN THE ITEM FILES AFTER CONFIRMATION
+###############################################################################
+
+initial: 1.1
+outline:
+        - SUB002: # The gimbal mechanism shall allow deflections of +-5 degr...

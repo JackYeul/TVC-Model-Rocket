@@ -1,0 +1,15 @@
+active: true
+derivation: ''
+derived: false
+header: ''
+level: 1.2
+links:
+- MIS001: 4LbJGbHEbp2HerzHqpgRcRAm7XvTt-hoAc1ZWahdx7k=
+normative: true
+rationale: ''
+ref: ''
+reviewed: AfKW9geYwaHRV4HyFUIVV2A6e25aJpQlQ8vwZp3wNOs=
+source: ''
+text: |
+  There shall be an avionics system onboard the TVC model rocket that supplies power, logic capabilities, sensors, and recovery electronics.
+verification_status: not_started

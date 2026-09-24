@@ -1,0 +1,15 @@
+active: true
+derivation: ''
+derived: false
+header: ''
+level: 1.3
+links:
+- MIS001: 4LbJGbHEbp2HerzHqpgRcRAm7XvTt-hoAc1ZWahdx7k=
+normative: true
+rationale: ''
+ref: ''
+reviewed: rvyV_5EKHC8S0Rs8DQr3mVYhrT1D9KHfmxgjy0CS1YU=
+source: ''
+text: |
+  The TVC model rocket shall have a recovery system that lowers it to the ground safely.
+verification_status: not_started

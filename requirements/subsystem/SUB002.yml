@@ -1,0 +1,15 @@
+active: true
+derivation: ''
+derived: false
+header: ''
+level: 1.1
+links:
+- SYS002: 4widYah_cpJ705N6QuKOjSX4GVy8BZHXLpNP23Fn_5g=
+normative: true
+rationale: ''
+ref: ''
+reviewed: 77QdsxbY9Rb56pUr6qz1Y7UNOgdc_T4_AiGPiweOU48=
+source: SYS002
+text: |
+  The gimbal mechanism shall allow deflections of +-5 degrees in both pitch and roll axis.
+verification_status: not_started

@@ -1,0 +1,15 @@
+active: true
+derivation: ''
+derived: false
+header: ''
+level: 1.5
+links:
+- MIS001: 4LbJGbHEbp2HerzHqpgRcRAm7XvTt-hoAc1ZWahdx7k=
+normative: true
+rationale: ''
+ref: ''
+reviewed: 2nhd15giM0ymFtj3q_7gVaieQse-0IfStZq0Ix3lC6g=
+source: ''
+text: |
+  The TVC model rocket shall have a GNC system capable of maintaining stable vertical flight.
+verification_status: not_started

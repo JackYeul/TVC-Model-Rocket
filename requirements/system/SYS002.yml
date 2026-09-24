@@ -1,0 +1,15 @@
+active: true
+derivation: ''
+derived: false
+header: ''
+level: 1.1
+links:
+- MIS001: 4LbJGbHEbp2HerzHqpgRcRAm7XvTt-hoAc1ZWahdx7k=
+normative: true
+rationale: ''
+ref: ''
+reviewed: HWeU5KA-wm17oLTe9G7D5XQZh7fCKx4x3sZpL6F6BgQ=
+source: MIS001
+text: |
+  The TVC model rocket shall be physically controlled via a gimbal mechanism.
+verification_status: not_started
