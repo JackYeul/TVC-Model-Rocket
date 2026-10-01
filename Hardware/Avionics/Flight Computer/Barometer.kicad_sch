@@ -160,50 +160,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SRAD:LPS22DFTR"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Sensor_Pressure:MS5611-01BA"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "A"
-				(at -15.24 15.875 0)
+			(property "Reference" "U"
+				(at -6.35 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "LPS22DFTR"
-				(at -15.24 -17.78 0)
+			(property "Value" "MS5611-01BA"
+				(at 7.62 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "LPS22DFTR:XDCR_LPS22DFTR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" ""
+			(property "Footprint" "Package_LGA:LGA-8_3x5mm_P1.25mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -214,7 +197,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -225,7 +208,7 @@
 					)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "0.8mm"
+			(property "Description" "Barometric pressure sensor, 10cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -234,10 +217,9 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 				)
 			)
-			(property "CREATOR" "NEZY"
+			(property "ki_keywords" "pressure SPI I2C"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -246,10 +228,9 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 				)
 			)
-			(property "STANDARD" "Manufacturer recommendations"
+			(property "ki_fp_filters" "LGA*3x5mm*P1.25mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -258,49 +239,12 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 				)
 			)
-			(property "PARTREV" "3"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "VERIFIER" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "STMicroelectronics"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "LPS22DFTR_0_0"
+			(symbol "MS5611-01BA_0_1"
 				(rectangle
-					(start -15.24 15.24)
-					(end 15.24 -15.24)
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -309,182 +253,149 @@
 						(type background)
 					)
 				)
+			)
+			(symbol "MS5611-01BA_1_1"
 				(pin power_in line
-					(at 20.32 10.16 180)
-					(length 5.08)
-					(name "VDD_IO"
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin passive clock
-					(at 20.32 5.08 180)
-					(length 5.08)
-					(name "SCL/SPC"
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "PS"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 20.32 -5.08 180)
-					(length 5.08)
-					(name "RES"
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 20.32 2.54 180)
-					(length 5.08)
-					(name "SDA/SDI/SDO"
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "CSB"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "SDO/SA0"
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(hide yes)
+					(name "CSB"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "5"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin input line
-					(at -20.32 5.08 0)
-					(length 5.08)
-					(name "CS"
+				(pin output line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SDO"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "6"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at -20.32 0 0)
-					(length 5.08)
-					(name "INT_DRDY"
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDI/SDA"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "7"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin power_in line
-					(at 20.32 -12.7 180)
-					(length 5.08)
-					(name "GND_IO"
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "SCLK"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "8"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 -10.16 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 12.7 180)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -747,9 +658,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "The 7-bit slave address (SAD) associated to the LPS22DF is 101110xb. The SDO/SA0 pin can be used to modify\nthe less significant bit of the device address. If the SA0 pin is connected to the voltage supply, LSb is 1 (7-bit\naddress 1011101b=5Dh), otherwise if the SA0 pin is connected to ground, the LSb value is 0 (7-bit address\n1011100b=5Ch)\n\ncurrently connected to ground so address: 1011100b=5Ch"
+	(text "7Bit I2C address of BMI088 is 0x76 = 1110110 with CSB connected to VDD,\n					0x77 = 1110111 if connected to GND "
 		(exclude_from_sim no)
-		(at 108.204 54.356 0)
+		(at 119.634 65.278 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -757,255 +668,157 @@
 		)
 		(uuid "29ca662b-29f4-4718-ae4c-a882567d43f8")
 	)
-	(text "This has been checked over and should be good"
-		(exclude_from_sim no)
-		(at 81.026 85.852 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d5e7e61e-ff0e-4144-861a-b0d2227e061e")
-	)
-	(text "Accurate within .702 ft"
-		(exclude_from_sim no)
-		(at 83.566 94.488 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d954e386-46c0-437a-905b-3919cc82539b")
-	)
 	(junction
-		(at 160.02 107.95)
+		(at 133.35 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "038d21db-7e84-43f7-b2fb-81bd29f88e69")
+		(uuid "3f0dc402-770f-4d5d-9905-53abb2158649")
 	)
 	(junction
-		(at 160.02 105.41)
+		(at 156.21 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "53177d89-a009-4d1c-bcbd-e8d4801c2690")
+		(uuid "71fdae98-15cf-4b0b-9621-f86a460fd37e")
 	)
 	(junction
-		(at 160.02 77.47)
+		(at 133.35 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5c192c2a-8f42-4cc1-8b25-e695e4e167f7")
+		(uuid "87025adc-2145-47c5-b3e8-ec76c5064985")
 	)
 	(junction
-		(at 148.59 72.39)
+		(at 133.35 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6bf61406-80d1-42ec-91f0-4f82a52f61c6")
-	)
-	(junction
-		(at 160.02 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f20240f-1622-406c-ad96-19578e120fd1")
-	)
-	(junction
-		(at 167.64 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98f3658b-8d69-4e66-b061-ad6b11ea2150")
-	)
-	(junction
-		(at 160.02 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7b05b86-fb59-4b5d-99d2-2afd34ffed8d")
-	)
-	(junction
-		(at 160.02 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e41ae5a6-13ad-4b25-ab03-2d73b2e37cac")
+		(uuid "ae2745c2-becc-47cf-bebc-6f9e158e0cd6")
 	)
 	(no_connect
-		(at 119.38 95.25)
-		(uuid "350790ea-b0cb-4a34-8f42-120b56722cc9")
+		(at 146.05 95.25)
+		(uuid "794e2730-43fd-40c3-b53d-577d2745c307")
 	)
 	(wire
 		(pts
-			(xy 167.64 107.95) (xy 160.02 107.95)
+			(xy 133.35 102.87) (xy 133.35 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5ecc6631-ba71-44ec-a741-c35c201cefd8")
+		(uuid "1494e259-20bb-41d4-a9c5-132cc0e03f96")
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 167.64 107.95)
+			(xy 156.21 107.95) (xy 156.21 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "69b29e05-046c-41d4-a276-66d090b226b6")
+		(uuid "200014f5-df28-41e7-ab5f-fcdb9f4bb28a")
 	)
 	(wire
 		(pts
-			(xy 160.02 77.47) (xy 160.02 82.55)
+			(xy 146.05 92.71) (xy 133.35 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7647a999-76c6-4fd1-814f-f4d124184d80")
+		(uuid "34a0e308-f922-4a1f-840c-2057ff162ab1")
 	)
 	(wire
 		(pts
-			(xy 160.02 105.41) (xy 160.02 107.95)
+			(xy 156.21 115.57) (xy 156.21 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7933113e-8d89-4fb7-ae7f-6f2be6a48c84")
+		(uuid "4c282f77-c632-46c1-83ce-3f2b3ab8c5b2")
 	)
 	(wire
 		(pts
-			(xy 160.02 72.39) (xy 160.02 77.47)
+			(xy 146.05 102.87) (xy 133.35 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "808e9729-7d1a-4a65-b7a5-88d8ce9c4f6e")
+		(uuid "61cc8d8e-10fb-4d4c-8255-21a1c2cedb40")
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 160.02 72.39)
+			(xy 133.35 102.87) (xy 133.35 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9258105c-08ea-4543-a606-bbda3cbf8f4e")
+		(uuid "7de96a1f-1658-4cf9-9d75-a3c085893b61")
 	)
 	(wire
 		(pts
-			(xy 167.64 64.77) (xy 167.64 77.47)
+			(xy 144.78 113.03) (xy 156.21 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f15474b-e877-440f-8497-002f627d1a9e")
+		(uuid "945e8823-a615-4f48-89a7-a22e8635bbef")
 	)
 	(wire
 		(pts
-			(xy 160.02 82.55) (xy 160.02 85.09)
+			(xy 137.16 113.03) (xy 133.35 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a568609c-4f8c-4202-91b8-8241f075bcfa")
+		(uuid "aaf91c39-5aaa-4123-ba4e-670db42e4a54")
 	)
 	(wire
 		(pts
-			(xy 160.02 95.25) (xy 160.02 100.33)
+			(xy 156.21 87.63) (xy 133.35 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cdaff352-2de8-48a8-b354-25aad456a597")
+		(uuid "abd439de-0286-4e18-b395-ab9db1e1763b")
 	)
 	(wire
 		(pts
-			(xy 148.59 64.77) (xy 167.64 64.77)
+			(xy 133.35 87.63) (xy 133.35 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d48d6f84-f8cf-44a0-b6a7-b11047c73f79")
+		(uuid "e7af2350-43e7-465c-8fdd-4a576263670c")
 	)
 	(wire
 		(pts
-			(xy 119.38 72.39) (xy 148.59 72.39)
+			(xy 133.35 92.71) (xy 133.35 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dade1fde-131a-4ee8-9897-c01802e54ad3")
-	)
-	(wire
-		(pts
-			(xy 148.59 72.39) (xy 160.02 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e887a4ac-d2b7-47c7-99de-4c75c4e0cfe6")
-	)
-	(wire
-		(pts
-			(xy 160.02 100.33) (xy 160.02 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8e535b6-4016-4453-92c1-cda95e5deff7")
-	)
-	(wire
-		(pts
-			(xy 119.38 90.17) (xy 119.38 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed98252c-1493-4882-9b19-339802231cd5")
-	)
-	(global_label "SCL"
-		(shape input)
-		(at 160.02 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8c703a1e-15b6-43f7-9741-8239797722d7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.5128 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "edee4931-27a2-43e3-a8f2-b7ac492e4c5e")
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 160.02 92.71 0)
+		(at 146.05 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "def1d029-480f-4d7b-a895-65c8ad1b2b38")
+		(uuid "ac82317b-d550-4ac7-bcc3-5e13f3d376ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.5733 92.71 0)
+			(at 139.4967 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1013,44 +826,23 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
-	(symbol
-		(lib_id "SRAD:LPS22DFTR")
-		(at 139.7 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+	(global_label "SCL"
+		(shape input)
+		(at 146.05 100.33 180)
 		(fields_autoplaced yes)
-		(uuid "1a31a327-2d10-4efc-a040-ccc23a7c0a0e")
-		(property "Reference" "A1"
-			(at 139.7 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "LPS22DFTR"
-			(at 139.7 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_LGA:ST_HLGA-10_2x2mm_P0.5mm_LayoutBorder3x2y"
-			(at 139.7 95.25 0)
+		(uuid "b1a59136-3077-4c75-8c89-58eb0b00ffcc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.5572 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1058,223 +850,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.8mm"
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "CREATOR" "NEZY"
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer recommendations"
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "3"
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "STMicroelectronics"
-			(at 139.7 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "10"
-			(uuid "6f8e0f5b-2c13-4365-8ae2-949ce2b70c7a")
-		)
-		(pin "3"
-			(uuid "db2a7090-8333-40fc-997b-d869f17136b3")
-		)
-		(pin "9"
-			(uuid "de280dbe-2df0-477b-b7de-6373b906547d")
-		)
-		(pin "1"
-			(uuid "fda166f4-7c10-45e0-8315-f1e311f8fd17")
-		)
-		(pin "6"
-			(uuid "b5b61683-7ed0-4fa1-babe-51598b528076")
-		)
-		(pin "2"
-			(uuid "1f338b3a-bc28-4eaf-99a6-20c5d7951574")
-		)
-		(pin "7"
-			(uuid "b14c652f-f4c2-46f2-859e-13c43776e3f6")
-		)
-		(pin "4"
-			(uuid "caddcbc0-a937-4642-8496-5e84d0601820")
-		)
-		(pin "5"
-			(uuid "f3384454-6929-4e1e-96c4-800de283ced9")
-		)
-		(pin "8"
-			(uuid "068f002a-d8fb-47cb-a191-7711eefb313a")
-		)
-		(instances
-			(project "Jack_Yeulenski_Flight_Computer"
-				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
-					(reference "A1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3403eff4-74b5-4599-9edb-33c80ca3e382")
-		(property "Reference" "#PWR016"
-			(at 160.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e65410a-a811-4458-b907-6369337c4b26")
-		)
-		(instances
-			(project "Jack_Yeulenski_Flight_Computer"
-				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
-					(reference "#PWR016")
-					(unit 1)
-				)
+				(justify right)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 160.02 71.12 0)
+		(at 133.35 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1283,9 +865,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3e42c81b-5024-4002-b30a-7eb7bd437029")
-		(property "Reference" "#PWR015"
-			(at 160.02 74.93 0)
+		(uuid "0ba82b64-ece9-434a-8994-686d84639c87")
+		(property "Reference" "#PWR027"
+			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1296,7 +878,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 160.02 66.04 0)
+			(at 133.35 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1306,7 +888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 71.12 0)
+			(at 133.35 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1317,7 +899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 71.12 0)
+			(at 133.35 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1328,7 +910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 160.02 71.12 0)
+			(at 133.35 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1339,20 +921,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "77dd7c12-36af-416c-a3b4-353487abd2a6")
+			(uuid "c70aa297-13f9-43fe-b641-b34ce40b5d9f")
 		)
 		(instances
 			(project "Jack_Yeulenski_Flight_Computer"
 				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
-					(reference "#PWR015")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 148.59 68.58 180)
+		(lib_id "power:GND")
+		(at 156.21 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1361,31 +943,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c4791037-888c-4108-a85c-8bf58758bbf4")
-		(property "Reference" "C1"
-			(at 152.4 67.3099 0)
+		(uuid "25ebe538-9722-4b90-9191-d0d5603f3f5b")
+		(property "Reference" "#PWR025"
+			(at 156.21 121.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "100nF"
-			(at 152.4 69.8499 0)
+		(property "Value" "GND"
+			(at 156.21 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 147.6248 64.77 0)
+		(property "Footprint" ""
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1396,7 +977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 68.58 0)
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1406,8 +987,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 148.59 68.58 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1416,17 +997,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "82a812ba-1063-4f64-9c47-83cbfdde0899")
 		)
 		(pin "1"
-			(uuid "3102b39e-44cc-4a7d-adfe-31a18dd286f7")
+			(uuid "b68413ea-f593-40fa-ae80-9d644d5b7082")
 		)
 		(instances
 			(project "Jack_Yeulenski_Flight_Computer"
 				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
-					(reference "C1")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1434,7 +1012,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 163.83 77.47 270)
+		(at 140.97 113.03 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1442,10 +1020,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e020a238-99c6-4480-b085-129086f050ae")
-		(property "Reference" "C2"
-			(at 163.83 69.85 90)
+		(uuid "760c3592-3cac-4dad-b31f-fac1354aeb0b")
+		(property "Reference" "C9"
+			(at 140.97 107.442 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1455,7 +1032,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 163.83 72.39 90)
+			(at 140.97 109.982 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1464,8 +1041,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 160.02 78.4352 0)
+		(property "Footprint" ""
+			(at 144.78 112.0648 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1476,7 +1053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 77.47 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1487,7 +1064,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 163.83 77.47 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1497,16 +1074,116 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "b23f16b5-ffa6-410d-ad9b-dfa077c41761")
-		)
 		(pin "1"
-			(uuid "1e9389b5-10dd-467c-bd29-542981c9e5ac")
+			(uuid "94b0f600-e360-457d-9221-8bd329cefb3b")
+		)
+		(pin "2"
+			(uuid "30324a13-8c04-48e4-8541-4fc697471dca")
 		)
 		(instances
 			(project "Jack_Yeulenski_Flight_Computer"
 				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
-					(reference "C2")
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Pressure:MS5611-01BA")
+		(at 156.21 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df09fb68-2e43-42d9-9de3-60b19fb9898e")
+		(property "Reference" "U4"
+			(at 165.1 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MS5611-01BA"
+			(at 165.1 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_LGA:LGA-8_3x5mm_P1.25mm"
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English"
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Barometric pressure sensor, 10cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8"
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "b8801787-1620-459f-b1eb-450673008423")
+		)
+		(pin "5"
+			(uuid "5bfdee44-5819-41f6-b6d3-d2f5b5e99e27")
+		)
+		(pin "8"
+			(uuid "579f139a-b889-4fd4-a199-c359a3d9d644")
+		)
+		(pin "3"
+			(uuid "dab5cb32-d0c2-495f-8ece-5d833f796705")
+		)
+		(pin "6"
+			(uuid "9009e666-02d0-453d-8e32-3e34e0f51e47")
+		)
+		(pin "7"
+			(uuid "1a33a058-d0a3-46ca-a9c9-5207a85841c6")
+		)
+		(pin "1"
+			(uuid "3850ccc9-db94-4ef3-bd79-6eec39d3cc0f")
+		)
+		(pin "2"
+			(uuid "16d4a57a-d2a5-4cbc-81cc-60d350913abc")
+		)
+		(instances
+			(project "Jack_Yeulenski_Flight_Computer"
+				(path "/0e457dee-ab7a-4947-acac-685db257dbd9/90dbbe8f-d831-457a-80e5-86785cc75e56"
+					(reference "U4")
 					(unit 1)
 				)
 			)
