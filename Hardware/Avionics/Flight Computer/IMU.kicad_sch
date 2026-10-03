@@ -1249,6 +1249,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 161.29 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9b02fd5-b726-4ab8-b5f4-07276462bdf9")
 		)
@@ -1487,6 +1498,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 152.4 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9bfd2e7c-8fe4-4b12-8b74-ef855c00ac08")
 		)
@@ -1590,10 +1612,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c4916711-7050-495c-84d3-211b2b47ea38")
 		(property "Reference" "U3"
-			(at 141.8433 77.47 0)
+			(at 133.858 67.056 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1604,7 +1625,7 @@
 			)
 		)
 		(property "Value" "BMI088"
-			(at 141.8433 80.01 0)
+			(at 133.858 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1637,6 +1658,17 @@
 			)
 		)
 		(property "Description" "Accelerometer, Gyroscope, 6-Axis Sensor, I2C / SPI interface, LGA-16"
+			(at 137.16 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/no_lead"
 			(at 137.16 95.25 0)
 			(hide yes)
 			(show_name no)

@@ -658,7 +658,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "7Bit I2C address of BMI088 is 0x76 = 1110110 with CSB connected to VDD,\n					0x77 = 1110111 if connected to GND "
+	(text "7Bit I2C address of MS5611 is 0x76 = 1110110 with CSB connected to VDD,\n					0x77 = 1110111 if connected to GND "
 		(exclude_from_sim no)
 		(at 119.634 65.278 0)
 		(effects
